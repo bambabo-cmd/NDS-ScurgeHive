@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "repository": "bambabo-cmd/NDS-ScurgeHive",
+  "documented_release": "v0.9.1 / WIP010",
+  "verification_date": "2026-09-29",
+  "timezone": "Asia/Seoul",
+  "source_rom": {
+    "size": 16777216,
+    "md5": "1715A66B342D03315E0904B22756BCA3",
+    "crc32": "F677306F",
+    "sha1": "8E70CFDF40EF290DF4D51C06848FB1E055EF491D",
+    "sha256": "FB5465E58239F33FD4B6D4D9B78CDE0A7439578916E88CEBEBA2BA68E33CC9AF",
+    "game_code": "AHVE",
+    "revision": 0,
+    "filename": "Scurge - Hive (USA) (En,Fr,Es).nds",
+    "platform": "Nintendo DS",
+    "region": "USA (En/Fr/Es)",
+    "representation": "압축을 푼 무수정 원본 전체 파일. NDS 내부 헤더를 보존하고 트리밍하지 않음"
+  },
+  "patches": [
+    {
+      "path": "NDS Scurge_Hive_KO_v0.9.1_wip010_260928.xdelta",
+      "format": "xdelta",
+      "github_blob_sha": "ef6b1adbca275b08e954dfa8529fad4aee49c9d9",
+      "patch_checksums": {
+        "size": 158095,
+        "md5": "AFB109E69F20ECBEE2510AEFE68E4DA2",
+        "crc32": "5A2BFBE4",
+        "sha1": "91B409C6BC725D895C03BC1B1907DD8236E1153D",
+        "sha256": "B16E584BC7E0ABB50EB1EF90126E0A6F311739D41385EA9D99B7D14F3FB71147"
+      },
+      "patched_rom": {
+        "size": 33554432,
+        "md5": "2ADA4A29C3B088665C5281B2F4FA013F",
+        "crc32": "F0267D72",
+        "sha1": "4406174B77B06AAA3A1F1D9F3BA694DC58D4FC6B",
+        "sha256": "991ED3C66B73062F28C21DFA6A5AF33DC8C7210A88F4925C0999F69F6C4D4146"
+      },
+      "verification": "업로드된 Git blob SHA와 로컬 패치 일치 확인 후 지원 원본에 직접 재적용. 결과 전체 파일의 체크섬 계산."
+    }
+  ],
+  "history": {
+    "first_work_date": "2026-09-28",
+    "earliest_verified_record_date": "2026-09-28",
+    "date_evidence": "Scurge_Hive_NDS_Language_Profile_v0_2/docs/ANALYSIS.md의 2026-09-28(KST) 분석 및 초기 패키지 생성 시각 2026-09-27 23:20:18 UTC = 2026-09-28 08:20:18 KST. 프로젝트 고유 기록 기준.",
+    "revision_label": "v0.9.1 / WIP010",
+    "recorded_revision_count": 10,
+    "recorded_revision_ids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "revision_count_definition": "번호가 붙은 보존 ROM·패치·문서의 고유 버전 수. 실패/철회 후보 포함 가능. 실제 수정 작업 횟수와 다름. Front Mission은 WIP_INDEX, Scurge는 001~010 작업 기록을 사용. 공통 규칙 파일/외부 도구 날짜 제외.",
+    "total_modification_count": null,
+    "release_work_date": "2026-09-28",
+    "final_project_completion_date": null,
+    "completion_status": "전체 작업 완료 기록 미확정; 진행 중인 검수와 알려진 한계를 보존",
+    "additional_context": "기준 ROM은 일본판이 아닌 미국판 En/Fr/Es, 게임 코드 AHVE rev0이다. 영어 의미 원문을 한국어로 옮겨 같은 ROM의 스페인어 언어 슬롯을 사용한다. 현재판은 기본 한국어 시작을 포함한다."
+  },
+  "verification_scope": "파일 식별 및 패치 적용 결과 검증. 이번 문서 작업에서 에뮬레이터 실행/전체 플레이 검증을 새로 수행한 것은 아님.",
+  "known_limitations": "개발 검수판. 실제 적 조우 상황의 대상 분류·HP 변화, 모든 구역과 장비·기록·배경의 회귀 검수가 남아 있다. SELECT+X 양수/최대48 표시는 진단 검사와 자연 진행 검증을 구분해야 한다."
+}

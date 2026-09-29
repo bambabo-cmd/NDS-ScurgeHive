@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "repository": "bambabo-cmd/NDS-ScurgeHive",
-  "documented_release": "v0.9.1 / WIP010",
-  "verification_date": "2026-09-29",
+  "documented_release": "WIP011",
+  "verification_date": "2026-09-30",
   "timezone": "Asia/Seoul",
   "source_rom": {
     "size": 16777216,
@@ -19,32 +19,32 @@
   },
   "patches": [
     {
-      "path": "NDS Scurge_Hive_KO_v0.9.1_wip010_260928.xdelta",
+      "path": "Scurge_Hive_KO_011.xdelta",
       "format": "xdelta",
-      "github_blob_sha": "ef6b1adbca275b08e954dfa8529fad4aee49c9d9",
+      "github_blob_sha": "7bbc85574d68dcff290e45753c63b28877e69968",
       "patch_checksums": {
-        "size": 158095,
-        "md5": "AFB109E69F20ECBEE2510AEFE68E4DA2",
-        "crc32": "5A2BFBE4",
-        "sha1": "91B409C6BC725D895C03BC1B1907DD8236E1153D",
-        "sha256": "B16E584BC7E0ABB50EB1EF90126E0A6F311739D41385EA9D99B7D14F3FB71147"
+        "size": 160639,
+        "md5": "78A3A7CE061CE5119AF37EDFB235F551",
+        "crc32": "68BF345D",
+        "sha1": "30877EDF37B78A152CF469BD064113F3F6BD20D0",
+        "sha256": "E5C9ABB7EB765F91F9B4338CD7E8D586F4B3118E1927D270E79194CA029E0164"
       },
       "patched_rom": {
         "size": 33554432,
-        "md5": "2ADA4A29C3B088665C5281B2F4FA013F",
-        "crc32": "F0267D72",
-        "sha1": "4406174B77B06AAA3A1F1D9F3BA694DC58D4FC6B",
-        "sha256": "991ED3C66B73062F28C21DFA6A5AF33DC8C7210A88F4925C0999F69F6C4D4146"
+        "md5": "655AB37CB45CF26B0BCA21CF20CD983A",
+        "crc32": "877E0A34",
+        "sha1": "6C9732538EA5979689141ECB70A1D212B1DEB03C",
+        "sha256": "8294D161E3A8BD846EB645795876FFF05B05541CD9C69610B059EE3E9A54DA90"
       },
-      "verification": "업로드된 Git blob SHA와 로컬 패치 일치 확인 후 지원 원본에 직접 재적용. 결과 전체 파일의 체크섬 계산."
+      "verification": "지원 무수정 원본에 직접 재적용한 결과와 로컬 최종 WIP011 ROM의 전체 바이트 일치. 체크섬 계산 및 게시 후 Git blob SHA 대조."
     }
   ],
   "history": {
     "first_work_date": "2026-09-28",
     "earliest_verified_record_date": "2026-09-28",
     "date_evidence": "Scurge_Hive_NDS_Language_Profile_v0_2/docs/ANALYSIS.md의 2026-09-28(KST) 분석 및 초기 패키지 생성 시각 2026-09-27 23:20:18 UTC = 2026-09-28 08:20:18 KST. 프로젝트 고유 기록 기준.",
-    "revision_label": "v0.9.1 / WIP010",
-    "recorded_revision_count": 10,
+    "revision_label": "WIP011",
+    "recorded_revision_count": 11,
     "recorded_revision_ids": [
       1,
       2,
@@ -55,15 +55,42 @@
       7,
       8,
       9,
-      10
+      10,
+      11
     ],
-    "revision_count_definition": "번호가 붙은 보존 ROM·패치·문서의 고유 버전 수. 실패/철회 후보 포함 가능. 실제 수정 작업 횟수와 다름. Front Mission은 WIP_INDEX, Scurge는 001~010 작업 기록을 사용. 공통 규칙 파일/외부 도구 날짜 제외.",
+    "revision_count_definition": "001~011 번호가 붙은 보존 작업 기록의 고유 버전 수. 실패·철회 후보 포함 가능. 실제 수정 작업 횟수와 다름.",
     "total_modification_count": null,
-    "release_work_date": "2026-09-28",
+    "release_work_date": "2026-09-30",
     "final_project_completion_date": null,
     "completion_status": "전체 작업 완료 기록 미확정; 진행 중인 검수와 알려진 한계를 보존",
-    "additional_context": "기준 ROM은 일본판이 아닌 미국판 En/Fr/Es, 게임 코드 AHVE rev0이다. 영어 의미 원문을 한국어로 옮겨 같은 ROM의 스페인어 언어 슬롯을 사용한다. 현재판은 기본 한국어 시작을 포함한다."
+    "additional_context": "기준 ROM은 일본판이 아닌 미국판 En/Fr/Es, 게임 코드 AHVE rev0이다. 영어 의미 원문을 한국어로 옮겨 같은 ROM의 스페인어 언어 슬롯을 사용한다. 현재판은 기본 한국어 시작을 포함한다.",
+    "release_date_evidence": "최종 패치 및 build/projectile_scale_011 파일의 로컬 수정 시각 2026-09-30(KST), HANDOFF_CURRENT.md와 docs/PROJECTILE_SCALE_011.md의 WIP011 최종 파일·해시 대조."
   },
   "verification_scope": "파일 식별 및 패치 적용 결과 검증. 이번 문서 작업에서 에뮬레이터 실행/전체 플레이 검증을 새로 수행한 것은 아님.",
-  "known_limitations": "개발 검수판. 실제 적 조우 상황의 대상 분류·HP 변화, 모든 구역과 장비·기록·배경의 회귀 검수가 남아 있다. SELECT+X 양수/최대48 표시는 진단 검사와 자연 진행 검증을 구분해야 한다."
+  "known_limitations": "개발 검수판. 실제 적 자연 전투의 확대 탄환 명중 및 SELECT+X 대상 분류·HP 변화, 상위 무기 실제 플레이, 장시간 VRAM 부담, 전체 번역·진행 검수가 남아 있다. 기존 234건 ARM 진단 검사와 실제 메뉴 입력 발사 표본을 게임 전체 검수와 구분한다.",
+  "previous_release": {
+    "documented_release": "v0.9.1 / WIP010",
+    "patches": [
+      {
+        "path": "NDS Scurge_Hive_KO_v0.9.1_wip010_260928.xdelta",
+        "format": "xdelta",
+        "github_blob_sha": "ef6b1adbca275b08e954dfa8529fad4aee49c9d9",
+        "patch_checksums": {
+          "size": 158095,
+          "md5": "AFB109E69F20ECBEE2510AEFE68E4DA2",
+          "crc32": "5A2BFBE4",
+          "sha1": "91B409C6BC725D895C03BC1B1907DD8236E1153D",
+          "sha256": "B16E584BC7E0ABB50EB1EF90126E0A6F311739D41385EA9D99B7D14F3FB71147"
+        },
+        "patched_rom": {
+          "size": 33554432,
+          "md5": "2ADA4A29C3B088665C5281B2F4FA013F",
+          "crc32": "F0267D72",
+          "sha1": "4406174B77B06AAA3A1F1D9F3BA694DC58D4FC6B",
+          "sha256": "991ED3C66B73062F28C21DFA6A5AF33DC8C7210A88F4925C0999F69F6C4D4146"
+        },
+        "verification": "업로드된 Git blob SHA와 로컬 패치 일치 확인 후 지원 원본에 직접 재적용. 결과 전체 파일의 체크섬 계산."
+      }
+    ]
+  }
 }
